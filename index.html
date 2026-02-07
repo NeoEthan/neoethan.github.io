@@ -1,14 +1,217 @@
 <!doctype html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neo | Homepage</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neo | Academic Hub</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Neo's academic hub: research, projects, resources, contact." />
 </head>
 <body>
-  <h1>Neo 的个人主页</h1>
-  <p>如果你能看到这行字，说明 GitHub Pages 已经发布成功。</p>
+  <header class="container header">
+    <div class="brand">
+      <div class="name">Neo</div>
+      <div class="tagline">
+        <span data-lang="en">Innovation · Peer evaluation · Empirical research</span>
+        <span data-lang="zh" class="hidden">创新 · 同行评价 · 实证研究</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home" data-lang="en">Home</a>
+      <a href="#home" data-lang="zh" class="hidden">主页</a>
+
+      <a href="#research" data-lang="en">Research</a>
+      <a href="#research" data-lang="zh" class="hidden">研究</a>
+
+      <a href="#resources" data-lang="en">Resources</a>
+      <a href="#resources" data-lang="zh" class="hidden">资源</a>
+
+      <a href="#contact" data-lang="en">Contact</a>
+      <a href="#contact" data-lang="zh" class="hidden">联系</a>
+    </nav>
+
+    <div class="links">
+      <button id="btnEN" class="btn outline" type="button">EN</button>
+      <button id="btnZH" class="btn outline" type="button">中文</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HOME -->
+    <section id="home" class="section">
+      <h1>
+        <span data-lang="en">Academic Hub</span>
+        <span data-lang="zh" class="hidden">学术主页</span>
+      </h1>
+
+      <p class="lead" data-lang="en">
+        I study how evaluation systems shape creativity and innovation, combining theory with large-scale empirical evidence.
+      </p>
+      <p class="lead hidden" data-lang="zh">
+        我关注评价制度如何塑造个体创造与创新行为，结合理论与大样本实证研究展开分析。
+      </p>
+
+      <div class="grid two">
+        <div class="card">
+          <h2>
+            <span data-lang="en">Current Focus</span>
+            <span data-lang="zh" class="hidden">当前研究重点</span>
+          </h2>
+          <ul>
+            <li data-lang="en">Evaluation disagreements and reflective learning</li>
+            <li data-lang="zh" class="hidden">评价分歧与反思性学习</li>
+
+            <li data-lang="en">Recognition signals and post-success narrowing</li>
+            <li data-lang="zh" class="hidden">正式认定信号与成功后行为收敛</li>
+
+            <li data-lang="en">Failure experiences and subsequent evaluation behavior</li>
+            <li data-lang="zh" class="hidden">创作失败经历与后续评价行为</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>
+            <span data-lang="en">Quick Links</span>
+            <span data-lang="zh" class="hidden">快速入口</span>
+          </h2>
+          <div class="links">
+            <!-- 把 # 换成你的真实链接（可留空占位） -->
+            <a class="btn" href="#research">
+              <span data-lang="en">Selected Work</span>
+              <span data-lang="zh" class="hidden">代表作</span>
+            </a>
+            <a class="btn outline" href="#resources">
+              <span data-lang="en">Templates</span>
+              <span data-lang="zh" class="hidden">模板</span>
+            </a>
+            <a class="btn outline" href="#contact">
+              <span data-lang="en">Contact</span>
+              <span data-lang="zh" class="hidden">联系</span>
+            </a>
+          </div>
+
+          <p class="note" data-lang="en">Low-key contact: email only.</p>
+          <p class="note hidden" data-lang="zh">联系入口保持克制：仅邮箱。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <h2>
+        <span data-lang="en">Research & Selected Work</span>
+        <span data-lang="zh" class="hidden">研究与代表作</span>
+      </h2>
+
+      <div class="card">
+        <h3>
+          <span data-lang="en">Evaluation Disagreements and Innovation (Crowdsourcing)</span>
+          <span data-lang="zh" class="hidden">评价分歧与创新（众包平台）</span>
+        </h3>
+        <p class="meta" data-lang="en">Mechanism: cognitive dissonance → reflective learning → reduced fixation</p>
+        <p class="meta hidden" data-lang="zh">机制：认知失调 → 反思性学习 → 减少认知固化</p>
+        <p class="note" data-lang="en">Status: working paper / under review (edit later)</p>
+        <p class="note hidden" data-lang="zh">状态：工作论文 / 在投（可后续修改）</p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>
+          <span data-lang="en">Formal Recognition Disclosure and Post-Recognition Narrowing</span>
+          <span data-lang="zh" class="hidden">正式认定披露与成功后行为收敛</span>
+        </h3>
+        <p class="meta" data-lang="en">Evidence: creative performance weakens after recognition disclosure under evaluation.</p>
+        <p class="meta hidden" data-lang="zh">证据：在评价情境下，认定披露后创意表现趋弱并更集中于已认定领域。</p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>
+          <span data-lang="en">Creative Failure and Subsequent Peer Evaluation</span>
+          <span data-lang="zh" class="hidden">创作失败与后续同行评价行为</span>
+        </h3>
+        <p class="meta" data-lang="en">Two-path framework: identity threat vs perspective-taking; moderated by self-efficacy.</p>
+        <p class="meta hidden" data-lang="zh">双路径：自我认同威胁 vs 换位思考；自我效能调节。</p>
+      </div>
+
+      <p class="note" data-lang="en">Next: we can turn each project into its own page (e.g., /projects/disagreement.html).</p>
+      <p class="note hidden" data-lang="zh">下一步：可将每个项目拆成独立页面（例如 /projects/disagreement.html）。</p>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="section">
+      <h2>
+        <span data-lang="en">Resources</span>
+        <span data-lang="zh" class="hidden">资源</span>
+      </h2>
+
+      <div class="grid two">
+        <div class="card">
+          <h3>
+            <span data-lang="en">Empirical Checklists</span>
+            <span data-lang="zh" class="hidden">实证清单</span>
+          </h3>
+          <ul>
+            <li data-lang="en">FE / reghdfe reporting checklist (placeholder)</li>
+            <li data-lang="zh" class="hidden">FE / reghdfe 报告清单（占位）</li>
+            <li data-lang="en">Robustness menu & reviewer-response skeleton (placeholder)</li>
+            <li data-lang="zh" class="hidden">稳健性菜单与审稿回复模板（占位）</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>
+            <span data-lang="en">Teaching Materials</span>
+            <span data-lang="zh" class="hidden">教学材料</span>
+          </h3>
+          <ul>
+            <li data-lang="en">How to build an academic hub page (this site)</li>
+            <li data-lang="zh" class="hidden">如何搭建学术主页（本网站即示例）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>
+        <span data-lang="en">Contact</span>
+        <span data-lang="zh" class="hidden">联系</span>
+      </h2>
+
+      <div class="card">
+        <p data-lang="en">Email is the best way to reach me:</p>
+        <p data-lang="zh" class="hidden">最便捷的联系方式是邮箱：</p>
+
+        <!-- 把邮箱改成你的真实邮箱 -->
+        <p class="mono" style="font-size:15px;margin:8px 0 0 0;">
+          <a href="mailto:neo@example.com">neo@example.com</a>
+        </p>
+
+        <p class="note" data-lang="en">I respond to academic collaboration and student supervision inquiries.</p>
+        <p class="note hidden" data-lang="zh">我会回复学术合作与学生指导相关的邮件。</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span data-lang="en">© Neo · Hosted on GitHub Pages</span>
+      <span data-lang="zh" class="hidden">© Neo · 托管于 GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      const en = document.querySelectorAll('[data-lang="en"]');
+      const zh = document.querySelectorAll('[data-lang="zh"]');
+      en.forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+      zh.forEach(el => el.classList.toggle('hidden', lang !== 'zh'));
+      localStorage.setItem('site_lang', lang);
+      document.documentElement.lang = lang;
+    }
+    document.getElementById('btnEN').addEventListener('click', () => setLang('en'));
+    document.getElementById('btnZH').addEventListener('click', () => setLang('zh'));
+    setLang(localStorage.getItem('site_lang') || 'zh');
+  </script>
 </body>
 </html>
+
 
