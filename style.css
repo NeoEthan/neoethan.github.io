@@ -379,38 +379,6 @@ a:hover { text-decoration: underline; }
 }
 
 /* =========================
-   Projects (Working papers)
-========================= */
-.project .project-head { display: grid; gap: 10px; }
-.project-title { font-weight: 900; letter-spacing: -0.2px; font-size: 16px; }
-.badges { display: flex; flex-wrap: wrap; gap: 8px; }
-.badge {
-  font-size: 12px;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--panel-2) 80%, transparent);
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-weight: 800;
-}
-
-.project-text { margin: 0; color: var(--muted); }
-.project-footer { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
-.mini { display: grid; gap: 6px; }
-.mini-k { color: var(--muted-2); font-size: 12px; font-weight: 900; }
-.mini-v { color: var(--text); font-size: 13px; }
-
-.callout {
-  margin-top: 16px;
-  border: 1px dashed color-mix(in srgb, var(--accent) 45%, var(--line));
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, transparent), color-mix(in srgb, var(--accent-2) 8%, transparent));
-  border-radius: var(--radius-lg);
-  padding: 16px;
-}
-.callout-title { font-weight: 900; margin-bottom: 6px; }
-.callout-text { color: var(--muted); margin: 0; }
-
-/* =========================
    Teaching & Contact
 ========================= */
 .bullets {
